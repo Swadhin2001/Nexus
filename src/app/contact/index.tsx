@@ -3,6 +3,10 @@ import React from "react";
 import { Button, Img, Heading, TextArea, Input, Text, Slider } from "../../components";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
+import InstagramIcon from '@mui/icons-material/Instagram';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import X from "@mui/icons-material/X";
+import EmailIcon from '@mui/icons-material/Email';
 
 
 export default function ContactPage() {
@@ -66,7 +70,7 @@ export default function ContactPage() {
                 </div>
                 <div className="flex items-start gap-[25px]">
                   <Img src="img_linkedin.svg" width={24} height={24} alt="linkedin" className="h-[24px] w-[24px]" />
-                  <Heading size="s" as="h6" className="w-[89%] leading-[111px] !text-gray-400_01">
+                  <Heading size="s" as="h6" className="!text-gray-400_01">
                     Sudirman street, holgan, melbourne
                   </Heading>
                 </div>
@@ -84,20 +88,20 @@ export default function ContactPage() {
                   Social Media
                 </Heading>
                 <div className="h-px w-full self-stretch bg-gray-200" />
-              </div>
-              <div className="flex gap-[19px]">
-                <Button shape="square" className="w-[47px]">
-                  <Img src="img_group_270.png" width={47} height={47} />
-                </Button>
-                <Button shape="square" className="w-[47px]">
-                  <Img src="img_group_271.png" width={47} height={47} />
-                </Button>
-                <Button shape="square" className="w-[47px]">
-                  <Img src="img_group_268.png" width={47} height={47} />
-                </Button>
-                <Button shape="square" className="w-[47px]">
-                  <Img src="img_group_269.png" width={47} height={47} />
-                </Button>
+                <div className="flex gap-[19px]">
+                  <Button shape="square" className="w-[47px] bg-transparent">
+                    <InstagramIcon/>
+                  </Button>
+                  <Button shape="square" className="w-[47px] bg-transparent">
+                    <X/>
+                  </Button>
+                  <Button shape="square" className="w-[47px] bg-transparent">
+                    <FacebookIcon/>
+                  </Button>
+                  <Button shape="square" className="w-[47px] bg-transparent">
+                    <EmailIcon/>
+                  </Button>
+                </div>
               </div>
             </div>
           </div>

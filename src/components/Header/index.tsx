@@ -16,7 +16,7 @@ interface Props {
 
 export default function Header({ ...props }: Props) {
   return (
-    <header {...props} className={`${props.className} flex self-stretch justify-center items-center py-[15px]`}>
+    <header {...props} className={`${props.className} flex self-stretch justify-center items-center py-[15px] `}>
       <div className="container-sm flex items-center justify-between gap-5 px-11 md:p-5 md:px-5 sm:flex-col">
         <Img
           src="img_header_logo.png"
@@ -27,7 +27,7 @@ export default function Header({ ...props }: Props) {
         />
         <ul className="!mr-[9px] flex items-start gap-[61px] md:mr-0">
           <li>
-            <Link href="/homepage">
+            <Link href="/">
               <div className="flex flex-col items-center gap-2">
                 <Heading as="h6" className={`!font-bold ${props.activehome}  hover:text-red-400_01`}>
                   Home
